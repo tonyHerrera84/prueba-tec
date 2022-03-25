@@ -1,0 +1,32 @@
+.header {
+  height: 66px;
+  width: 100%;
+  background-color: #1b365d;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+  padding: 8px 16px;
+  font-family: "Open Sans", sans-serif;
+  &__title {
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    opacity: .9;
+  }
+  &-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    .icon {
+      font-size: 22px;
+      width: 22px;
+      height: 22px;
+      opacity: .9;
+      &:last-child {
+        margin-left: 16px;
+      }
+    }
+  }
+}

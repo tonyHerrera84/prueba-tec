@@ -1,0 +1,27 @@
+<div class="banner-top">
+  00:00:00 <span class="circle"></span>
+</div>
+
+<div class="capture-name">
+  Rodolfo está firmando
+</div>
+
+<div class="capture-message">
+  Coloca dentro del margen tu rostro
+</div>
+
+<div class="capture-container">
+  <div class="capture-frame">
+    <webcam [height]="350" [width]="288" [videoOptions]="videoOptions" [trigger]="triggerObservable" [allowCameraSwitch]="false" (imageCapture)="handleImage($event)"></webcam>
+    <img class="frame-img" src="assets/img/frame-01.png" alt="">
+  </div>
+  <!-- <div class="ovalo"></div> -->
+</div>
+
+<div class="capture-buttons">
+  <mat-icon class="icon">cameraswitch</mat-icon>
+  <div *ngIf="loading" class="icon" [class.spinner]="loading"></div>
+  <mat-icon *ngIf="!loading" class="icon"   (click)="triggerSnapshot()">photo_camera</mat-icon>
+</div>
+
+
