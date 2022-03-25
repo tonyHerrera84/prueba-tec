@@ -15,13 +15,16 @@
     <mat-icon class="icon-ok">check_circle_outline</mat-icon>
     <div class="capture-oktext">Bien</div>
     <div class="capture-okdesc">¡Haz tomado exitosamentetu foto!</div>
+
+    <div class="capture-buttons">
+      <button class="btn-continuar" routerLink="/capture-doc">CONTINUAR</button>
+      <div class="capture-okdesc" style="margin-top: 16px; margin-bottom: 32px;" routerLink="/capture-id">Volver a tomar</div>
+      <!-- <mat-icon class="icon">cameraswitch</mat-icon> -->
+      <!-- <div *ngIf="loading" class="icon" [class.spinner]="loading"></div>
+      <mat-icon *ngIf="!loading" class="icon"   (click)="triggerSnapshot()">photo_camera</mat-icon> -->
+    </div>
   </div>
 </div>
 
-<div class="capture-buttons">
-  <button class="btn-continuar">CONTINUAR</button>
-  <!-- <mat-icon class="icon">cameraswitch</mat-icon> -->
-  <!-- <div *ngIf="loading" class="icon" [class.spinner]="loading"></div>
-  <mat-icon *ngIf="!loading" class="icon"   (click)="triggerSnapshot()">photo_camera</mat-icon> -->
-</div>
+
 

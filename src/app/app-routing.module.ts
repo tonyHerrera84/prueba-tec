@@ -24,6 +24,13 @@ const routes: Routes = [
       )
   },
   {
+    path: 'capture-doc',
+    loadChildren: () =>
+      import('./modules/capture-doc/capture-doc.module').then(
+        (m) => m.CaptureDocModule
+      )
+  },
+  {
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'
