@@ -31,6 +31,20 @@ const routes: Routes = [
       )
   },
   {
+    path: 'capture-showdoc',
+    loadChildren: () =>
+      import('./modules/capture-showdoc/capture-showdoc.module').then(
+        (m) => m.CaptureShowdocModule
+      )
+  },
+  {
+    path: 'capture-fin',
+    loadChildren: () =>
+      import('./modules/capture-fin/capture-fin.module').then(
+        (m) => m.CaptureFinModule
+      )
+  },
+  {
     path: '',
     redirectTo: 'inicio',
     pathMatch: 'full'

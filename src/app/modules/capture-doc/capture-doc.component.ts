@@ -37,15 +37,15 @@ export class CaptureDocComponent implements OnInit {
     console.info('received webcam image', webcamImage);
     this.webcamImage = webcamImage;
     if (webcamImage) {
-      localStorage.setItem('foto', webcamImage.imageAsDataUrl)
+      localStorage.setItem('fotoDoc', webcamImage.imageAsDataUrl)
       this.loading = true;
       setTimeout(() => {
-        this._router.navigateByUrl('/capture-showid')
+        this._router.navigateByUrl('/capture-showdoc')
       }, 2000);
     }
   }
 
-  public triggerSnapshot(): void {
+  public triggerSnapshot3(): void {
     console.log('test')
     this.trigger.next();
   }

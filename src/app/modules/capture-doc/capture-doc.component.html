@@ -7,13 +7,14 @@
 </div>
 
 <div class="capture-message">
-  Coloca dentro del margen tu rostro
+  Coloca dentro del margen tu identificacion
+  <p style="font-size: .8em; font-weight: 400;">Recuerda tomar fotografia de tu INE, pasaporte o FM3.</p>
 </div>
 
 <div class="capture-container">
   <div class="capture-frame">
     <webcam [height]="350" [width]="288" [videoOptions]="videoOptions" [trigger]="triggerObservable" [allowCameraSwitch]="false" (imageCapture)="handleImage($event)"></webcam>
-    <img class="frame-img" src="assets/img/frame-01.png" alt="">
+    <img class="frame-img" src="assets/img/frame-2.png" alt="">
   </div>
   <!-- <div class="ovalo"></div> -->
 </div>
@@ -21,5 +22,5 @@
 <div class="capture-buttons">
   <mat-icon class="icon">cameraswitch</mat-icon>
   <div *ngIf="loading" class="icon" [class.spinner]="loading"></div>
-  <mat-icon *ngIf="!loading" class="icon"   (click)="triggerSnapshot()">photo_camera</mat-icon>
+  <mat-icon *ngIf="!loading" class="icon"   (click)="triggerSnapshot3()">photo_camera</mat-icon>
 </div>
